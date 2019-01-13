@@ -1,0 +1,18 @@
+{
+  "name": "pug-sass-starter-pack",
+  "version": "1.0.0",
+  "description": "Boilerplate for getting a pug/scss project up and running quickly.",
+  "main": "index.html",
+  "scripts": {
+    "pug": "pug -w ./pug -o ./ -P",
+    "style": "node-sass ./scss/styles.scss ./css/styles.css --watch",
+    "dev": "concurrently \"npm:pug\" \"npm:style\""
+  },
+  "author": "Brandon Ubben",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3"
+  }
+}
