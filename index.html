@@ -14,8 +14,44 @@
         <p>Here's some simple boilerplate to get you started quickly!</p>
       </header>
       <section>
+        <p>
+          This project utilizes 
+          <a href="https://pugjs.org/api/getting-started.html" target="blank" rel="noopener noreferrer">pug</a>
+          and 
+          <a href="https://www.npmjs.com/package/node-sass" target="_blank" rel="noopener noreferrer">node-sass</a>
+          to spin up HTML pages with ease and speed. The power of 
+          easy-to-use templating and compiled CSS, ready-to-go!
+        </p>
         <h2>How to Get Started:</h2>
-        <p>In a terminal, execute 'npm install' and the 'npm run dev' and you should be all good to go!</p>
+        <p>
+          In a terminal, clone the project and execute 
+          <strong>'npm install'</strong> 
+          and then 
+          <strong>'npm run dev'</strong>
+          and enjoy! 
+        </p>
+      </section>
+      <section>
+        <h2>Individual compilation</h2>
+        <p>As inspection of the <em>package.json</em> will reveal,
+          there are two separate scripts defined and these are
+          run simultaneously using <a href="https://github.com/kimmobrunfeldt/concurrently" target="_blank" rel="noopener noreferrer">concurrently.</a>
+        </p>
+        <h4>Compiling Pug Individually</h4>
+        <p>
+          Pug files can be compiled into HTML without watching
+          for any changes on styles.scss by executing 
+          <strong>'npm run pug'</strong> 
+          instead of dev.
+        </p>
+        <h4>Compiling SCSS Individually</h4>
+        <p>
+          Similarly to pug, the same can be done for SASS/SCSS.
+          This command is 
+          <strong>'npm run style'</strong>
+          and it will only watch for changes to styles.scss 
+          without worrying about and pug files.
+        </p>
       </section>
     </main>
   </body>

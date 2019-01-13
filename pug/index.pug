@@ -12,5 +12,36 @@ html(lang='en')
                 h1 Pug SASS/SCSS Starter Pack
                 p Here's some simple boilerplate to get you started quickly!
             section
+                p.
+                    This project utilizes 
+                    #[a(href='https://pugjs.org/api/getting-started.html' target='blank' rel='noopener noreferrer') pug]
+                    and 
+                    #[a(href='https://www.npmjs.com/package/node-sass' target='_blank' rel='noopener noreferrer') node-sass]
+                    to spin up HTML pages with ease and speed. The power of 
+                    easy-to-use templating and compiled CSS, ready-to-go!
                 h2 How to Get Started:
-                p In a terminal, execute 'npm install' and the 'npm run dev' and you should be all good to go!
+                p.
+                    In a terminal, clone the project and execute 
+                    #[strong 'npm install'] 
+                    and then 
+                    #[strong 'npm run dev']
+                    and enjoy! 
+            section
+                h2 Individual compilation
+                p.
+                    As inspection of the #[em package.json] will reveal,
+                    there are two separate scripts defined and these are
+                    run simultaneously using #[a(href='https://github.com/kimmobrunfeldt/concurrently' target='_blank' rel='noopener noreferrer') concurrently.]
+                h4 Compiling Pug Individually
+                p.
+                    Pug files can be compiled into HTML without watching
+                    for any changes on styles.scss by executing 
+                    #[strong 'npm run pug'] 
+                    instead of dev.
+                h4 Compiling SCSS Individually
+                p.
+                    Similarly to pug, the same can be done for SASS/SCSS.
+                    This command is 
+                    #[strong 'npm run style']
+                    and it will only watch for changes to styles.scss 
+                    without worrying about and pug files.
